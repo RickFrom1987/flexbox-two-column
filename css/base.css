@@ -1,0 +1,14 @@
+/*
+
+Base.css
+
+*/
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  height: 100%;
+}

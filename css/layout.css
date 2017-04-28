@@ -1,0 +1,55 @@
+/*
+
+Container keeps layout centered on large screens
+
+*/
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 980px) {
+  .container {
+    width: 980px;
+  }
+}
+
+/*
+
+Flexbox Two column layout
+
+*/
+
+.body {
+  flex: 1;
+  flex-direction: column;
+}
+
+.nav {
+  order: -1;
+  padding: 24px;
+  background-color: #DADBDA;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+  background-color: #F0F1F0;
+}
+
+@media (min-width: 980px) {
+  .body {
+    flex: 1;
+    flex-direction: row;
+  }
+
+  .nav {
+    flex: 0 0 200px;
+  }
+
+  .content {
+    flex: 1;
+  }
+}

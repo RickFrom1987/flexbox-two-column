@@ -1,0 +1,59 @@
+/* 
+
+Flexbox helpers
+
+Need to make cross browser
+
+*/
+
+.flex {
+  display: inline-block;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1 0 auto;
+}
+
+.flex-row {
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+.flex-col {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.flex-justify-center { 
+  -webkit-justify-content: center;
+  justify-content: center; 
+}
+
+.flex-align-center { 
+  -webkit-align-items: center;
+  align-items: center; 
+}
+
+.flex-absolute-center {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex-start { 
+  -webkit-align-items: flex-start;
+  align-items: flex-start; 
+}
+
+.flex-end { 
+  -webkit-align-items: flex-end; 
+  align-items: flex-end; 
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-right {
+  margin-left: auto;
+}

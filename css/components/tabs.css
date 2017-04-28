@@ -1,0 +1,15 @@
+/*
+
+Style the tab component
+
+*/
+
+.tabs .tab {
+  padding: 12px;
+  border: 1px solid #DADBDA;
+  border-radius: 4px;
+}
+
+.tabs .tab .fa {
+  margin-right: 6px;
+}

@@ -1,0 +1,16 @@
+/*
+
+Style header
+
+*/
+
+.header {
+  height: 50px;
+  padding: 12px;
+  background-color: #24292e;
+  color: white;
+}
+
+.header .logo {
+  margin-right: 12px;
+}

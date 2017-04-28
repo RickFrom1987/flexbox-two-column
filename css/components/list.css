@@ -1,0 +1,9 @@
+/*
+
+list.css
+
+*/
+
+ul.inline li {
+  display: inline-block;
+}
