@@ -13,10 +13,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
     <link rel="stylesheet" href="css/main.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
   </head>
   <body class="layout flex flex-col">
-    <script src="js/main.js"></script>
-
     <header class="header flex flex-align-center flex-grow-0">
       <nav class="container flex flex-align-center flex-grow-0">
         <div class="logo">
@@ -46,14 +45,23 @@
             <li class="tab"><i class="fa fa-flash"></i>Item</li>
             <li class="tab"><i class="fa fa-flash"></i>Item</li>
           </ul>
-          <div class="card flex flex-col">
-            <div class="title flex flex-absolute-center"><i class="fa fa-flash"></i></div>
-            <div class="bars pulse"></div>
-            <div class="bars pulse"></div>
-            <div class="bars pulse"></div>
+          <div data-bind="foreach: projects">
+            <div class="card flex flex-col">
+              <div class="flex flex-align-center">
+                <div class="title flex flex-absolute-center flex-grow-0">
+                  <i class="fa fa-flash"></i>
+                </div>
+                <span data-bind="text: name"></span>
+              </div>
+              <p data-bind="text: desc"></p>
+              <div class="bars pulse"></div>
+              <div class="bars pulse"></div>
+              <div class="bars pulse"></div>
+            </div>
           </div>
         </section>
       </div>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>
