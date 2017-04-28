@@ -37,4 +37,5 @@ DEMO.init = () => {
   }, Promise.resolve());
 }
 
-DEMO.init();
+// Init
+document.addEventListener('DOMContentLoaded', DEMO.init);
