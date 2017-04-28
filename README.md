@@ -17,3 +17,5 @@ python -m SimpleHTTPServer
 - Add build system
 
 - Basic linting
+
+- Play with returning promises with array reduce to stagger showing of cards.
